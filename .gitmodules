@@ -1,0 +1,3 @@
+[submodule "05-tudu"]
+	path = 05-tudu
+	url = https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2020-2021/05-tudu
