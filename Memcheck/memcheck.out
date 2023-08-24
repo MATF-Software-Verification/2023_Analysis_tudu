@@ -1,0 +1,94 @@
+==87690== Memcheck, a memory error detector
+==87690== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==87690== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==87690== Command: ./tudu
+==87690== Parent PID: 5150
+==87690== 
+==87690== Invalid read of size 8
+==87690==    at 0x4026FA8: strncmp (strcmp-sse2.S:162)
+==87690==    by 0x40051CE: is_dst (dl-load.c:216)
+==87690==    by 0x4006456: _dl_dst_count (dl-load.c:253)
+==87690==    by 0x4006456: expand_dynamic_string_token (dl-load.c:395)
+==87690==    by 0x4006601: fillin_rpath.isra.0 (dl-load.c:483)
+==87690==    by 0x4006932: decompose_rpath (dl-load.c:654)
+==87690==    by 0x4008F5F: cache_rpath (dl-load.c:696)
+==87690==    by 0x4008F5F: _dl_map_object (dl-load.c:2114)
+==87690==    by 0x4002504: openaux (dl-deps.c:64)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400293E: _dl_map_object_deps (dl-deps.c:232)
+==87690==    by 0x400C98E: dl_open_worker_begin (dl-open.c:592)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400BE39: dl_open_worker (dl-open.c:782)
+==87690==  Address 0xf692459 is 9 bytes inside a block of size 15 alloc'd
+==87690==    at 0x4844899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==87690==    by 0x4026D8E: malloc (rtld-malloc.h:56)
+==87690==    by 0x4026D8E: strdup (strdup.c:42)
+==87690==    by 0x40068C4: decompose_rpath (dl-load.c:629)
+==87690==    by 0x4008F5F: cache_rpath (dl-load.c:696)
+==87690==    by 0x4008F5F: _dl_map_object (dl-load.c:2114)
+==87690==    by 0x4002504: openaux (dl-deps.c:64)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400293E: _dl_map_object_deps (dl-deps.c:232)
+==87690==    by 0x400C98E: dl_open_worker_begin (dl-open.c:592)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400BE39: dl_open_worker (dl-open.c:782)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400C20B: _dl_open (dl-open.c:886)
+==87690== 
+==87690== Invalid read of size 8
+==87690==    at 0x4026FA8: strncmp (strcmp-sse2.S:162)
+==87690==    by 0x40051CE: is_dst (dl-load.c:216)
+==87690==    by 0x40062C5: _dl_dst_substitute (dl-load.c:295)
+==87690==    by 0x4006601: fillin_rpath.isra.0 (dl-load.c:483)
+==87690==    by 0x4006932: decompose_rpath (dl-load.c:654)
+==87690==    by 0x4008F5F: cache_rpath (dl-load.c:696)
+==87690==    by 0x4008F5F: _dl_map_object (dl-load.c:2114)
+==87690==    by 0x4002504: openaux (dl-deps.c:64)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400293E: _dl_map_object_deps (dl-deps.c:232)
+==87690==    by 0x400C98E: dl_open_worker_begin (dl-open.c:592)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400BE39: dl_open_worker (dl-open.c:782)
+==87690==  Address 0xf692459 is 9 bytes inside a block of size 15 alloc'd
+==87690==    at 0x4844899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==87690==    by 0x4026D8E: malloc (rtld-malloc.h:56)
+==87690==    by 0x4026D8E: strdup (strdup.c:42)
+==87690==    by 0x40068C4: decompose_rpath (dl-load.c:629)
+==87690==    by 0x4008F5F: cache_rpath (dl-load.c:696)
+==87690==    by 0x4008F5F: _dl_map_object (dl-load.c:2114)
+==87690==    by 0x4002504: openaux (dl-deps.c:64)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400293E: _dl_map_object_deps (dl-deps.c:232)
+==87690==    by 0x400C98E: dl_open_worker_begin (dl-open.c:592)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400BE39: dl_open_worker (dl-open.c:782)
+==87690==    by 0x5F1E799: _dl_catch_exception (dl-error-skeleton.c:208)
+==87690==    by 0x400C20B: _dl_open (dl-open.c:886)
+==87690== 
+==87690== 
+==87690== Process terminating with default action of signal 2 (SIGINT)
+==87690==    at 0x5EC212F: poll (poll.c:29)
+==87690==    by 0x6984CDD: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+==87690==    by 0x692CD1F: g_main_context_iteration (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+==87690==    by 0x5918AE9: QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+==87690==    by 0x58BD7CA: QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+==87690==    by 0x58C5C29: QCoreApplication::exec() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+==87690==    by 0x1183FE: main (main.cpp:10)
+==87690== 
+==87690== HEAP SUMMARY:
+==87690==     in use at exit: 37,529,148 bytes in 58,657 blocks
+==87690==   total heap usage: 701,675 allocs, 643,018 frees, 175,025,006 bytes allocated
+==87690== 
+==87690== xtree leak report: /home/sara/Desktop/Sara/Desktop/Verification/05-tudu/build-tudu-Desktop-Debug/xtleak.kcg.87690
+==87690== LEAK SUMMARY:
+==87690==    definitely lost: 920 bytes in 11 blocks
+==87690==    indirectly lost: 3,348 bytes in 41 blocks
+==87690==      possibly lost: 86,040 bytes in 741 blocks
+==87690==    still reachable: 37,363,176 bytes in 57,171 blocks
+==87690==                       of which reachable via heuristic:
+==87690==                         newarray           : 24 bytes in 1 blocks
+==87690==                         multipleinheritance: 10,472 bytes in 13 blocks
+==87690==         suppressed: 0 bytes in 0 blocks
+==87690== 
+==87690== For lists of detected and suppressed errors, rerun with: -s
+==87690== ERROR SUMMARY: 641 errors from 641 contexts (suppressed: 0 from 0)

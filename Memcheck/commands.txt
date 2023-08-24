@@ -1,0 +1,8 @@
+Command for running memory tests in output file:
+valgrind --leak-check=full --leak-resolution=high --show-leak-kinds=all --xtree-leak=yes --log-file=memcheck.out ./tudu 
+
+Memcheck command that generates .kcg file that can be opened with kcachegrind:
+valgrind --leak-check=full --leak-resolution=high --show-leak-kinds=all --xtree-leak=yes 
+
+Summary:
+As we can see in picture from Qt Creator, there were no memmory leaks, this is a very simple project.
