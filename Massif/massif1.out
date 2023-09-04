@@ -1,0 +1,531 @@
+--------------------------------------------------------------------------------
+Command:            ./tudu
+Massif arguments:   (none)
+ms_print arguments: massif.out.20208
+--------------------------------------------------------------------------------
+
+
+    KB
+148.8^                                                           #            
+     |                                                       :   # :     :    
+     |                                                       :   # :    :@    
+     |                                                      :: ::#:: ::::@ @::
+     |                                                      :::::#:::::::@:@::
+     |                                                      :::::#:::::::@:@::
+     |                                                   ::::::::#:::::@:@:@::
+     |                                                  :::::::::#:::::@:@:@::
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+     |                                                  :::::::::#:::::@:@:@:@
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   9.319
+
+Number of snapshots: 71
+ Detailed snapshots: [29 (peak), 45, 49, 59, 69]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      6,699,065               88               80             8            0
+  2      6,731,264            1,120            1,104            16            0
+  3      6,801,385           94,432           93,595           837            0
+  4      6,852,693          104,480          101,338         3,142            0
+  5      6,968,448          105,624          102,433         3,191            0
+  6      7,026,053          107,352          104,024         3,328            0
+  7      7,066,144          108,976          105,345         3,631            0
+  8      7,120,330          109,000          105,351         3,649            0
+  9      7,149,609          109,040          105,375         3,665            0
+ 10      7,194,110          109,152          105,441         3,711            0
+ 11      7,252,730          109,152          105,441         3,711            0
+ 12      7,318,514          109,032          105,347         3,685            0
+ 13      7,366,579          109,160          105,452         3,708            0
+ 14      7,418,532          135,208          131,143         4,065            0
+ 15      7,470,210          138,600          134,319         4,281            0
+ 16      7,520,693          141,440          136,959         4,481            0
+ 17      7,591,809          146,440          141,679         4,761            0
+ 18      7,647,683          126,376          121,166         5,210            0
+ 19      7,698,612          128,312          123,307         5,005            0
+ 20      7,729,387          128,912          123,897         5,015            0
+ 21      7,770,344          129,864          124,851         5,013            0
+ 22      7,821,312          131,968          126,938         5,030            0
+ 23      7,852,148          131,912          126,911         5,001            0
+ 24      7,902,940          132,024          127,026         4,998            0
+ 25      7,954,463          136,096          131,083         5,013            0
+ 26      7,995,148          136,040          131,040         5,000            0
+ 27      8,026,127          135,992          130,987         5,005            0
+ 28      8,077,370          136,008          131,001         5,007            0
+ 29      8,108,641          152,352          147,362         4,990            0
+96.72% (147,362B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.72% (72,704B) 0x5C05A89: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+| ->47.72% (72,704B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+|   ->47.72% (72,704B) 0x40050A7: call_init (dl-init.c:33)
+|     ->47.72% (72,704B) 0x40050A7: _dl_init (dl-init.c:117)
+|       ->47.72% (72,704B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+|         
+->21.18% (32,273B) 0x56D22C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| ->10.86% (16,548B) 0x571FDF3: QByteArray::QByteArray(int, Qt::Initialization) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->10.77% (16,409B) 0x5709CB6: QRingBuffer::reserve(long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->10.77% (16,409B) 0x5709F63: QRingBuffer::append(char const*, long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | ->10.77% (16,409B) 0x57D9016: QFileDevice::writeData(char const*, long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |   ->10.77% (16,409B) 0x57E323E: QIODevice::write(char const*, long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |     ->10.77% (16,409B) 0x117D9A: QIODevice::write(QByteArray const&) (qiodevice.h:137)
+| | | |       ->10.77% (16,409B) 0x11DBBC: Task::save(QString) (task.cpp:183)
+| | | |         ->10.77% (16,409B) 0x115269: main (main.cpp:17)
+| | | |           
+| | | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.09% (139B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->05.08% (7,736B) 0x5929705: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->04.25% (6,472B) 0x593E478: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->04.25% (6,472B) 0x593F2CC: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |   ->04.25% (6,472B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     ->03.58% (5,456B) 0x593EF8E: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     | ->03.58% (5,456B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |   ->03.58% (5,456B) 0x594018C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |     ->03.58% (5,456B) 0x5930A23: QJsonDocument::fromJson(QByteArray const&, QJsonParseError*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |       ->03.58% (5,456B) 0x11D59C: Task::save(QString) (task.cpp:161)
+| | |     |         ->03.58% (5,456B) 0x115269: main (main.cpp:17)
+| | |     |           
+| | |     ->00.67% (1,016B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->00.83% (1,264B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->03.52% (5,358B) 0x574F32D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->03.52% (5,358B) in 142 places, all below massif's threshold (1.00%)
+| |   
+| ->01.73% (2,631B) in 16 places, all below massif's threshold (1.00%)
+|   
+->10.88% (16,576B) 0x692D9C8: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->10.75% (16,384B) 0x692DE03: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->10.75% (16,384B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->10.75% (16,384B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |     ->10.75% (16,384B) 0x40050A7: call_init (dl-init.c:33)
+| |       ->10.75% (16,384B) 0x40050A7: _dl_init (dl-init.c:117)
+| |         ->10.75% (16,384B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |           
+| ->00.13% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->10.08% (15,360B) 0x56D236F: QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| ->09.91% (15,104B) 0x571FEE1: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->05.38% (8,192B) 0x57210C7: QByteArray::append(QByteArray const&) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->05.38% (8,192B) 0x593BB2D: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | ->05.38% (8,192B) 0x593B866: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |   ->05.38% (8,192B) 0x593BCC9: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |     ->05.38% (8,192B) 0x593C31C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |       ->05.38% (8,192B) 0x593094D: QJsonDocument::toJson(QJsonDocument::JsonFormat) const (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |         ->05.38% (8,192B) 0x59309A2: QJsonDocument::toJson() const (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |           ->05.38% (8,192B) 0x11DBA3: Task::save(QString) (task.cpp:183)
+| | | |             ->05.38% (8,192B) 0x115269: main (main.cpp:17)
+| | | |               
+| | | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->04.54% (6,912B) 0x571FF3A: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->04.37% (6,656B) 0x593E3FA: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | ->03.70% (5,632B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | | ->03.70% (5,632B) 0x593EF8E: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |   ->03.70% (5,632B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |     ->03.70% (5,632B) 0x594018C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |       ->03.70% (5,632B) 0x5930A23: QJsonDocument::fromJson(QByteArray const&, QJsonParseError*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |         ->03.70% (5,632B) 0x11D59C: Task::save(QString) (task.cpp:161)
+| | | | |           ->03.70% (5,632B) 0x115269: main (main.cpp:17)
+| | | | |             
+| | | | ->00.67% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | | 
+| | | ->00.17% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.17% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.12% (6,273B) in 55 places, all below massif's threshold (1.00%)
+| 
+->01.38% (2,096B) 0x692DEE0: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->01.33% (2,032B) 0x69456FB: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->01.33% (2,032B) 0x6913171: g_hash_table_new_full (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->01.33% (2,032B) 0x692DDF2: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |     ->01.33% (2,032B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |       ->01.33% (2,032B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |         ->01.33% (2,032B) 0x40050A7: call_init (dl-init.c:33)
+| |           ->01.33% (2,032B) 0x40050A7: _dl_init (dl-init.c:117)
+| |             ->01.33% (2,032B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |               
+| ->00.04% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.37% (2,080B) 0x5DE4BFE: __new_exitfn (cxa_atexit.c:114)
+  ->01.37% (2,080B) 0x5DE4D6F: __internal_atexit (cxa_atexit.c:44)
+    ->01.37% (2,080B) 0x5DE4D6F: __cxa_atexit (cxa_atexit.c:70)
+      ->01.37% (2,080B) in 2 places, all below massif's threshold (1.00%)
+        
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 30      8,172,908          133,104          129,186         3,918            0
+ 31      8,235,617          137,080          132,882         4,198            0
+ 32      8,297,010          141,056          136,603         4,453            0
+ 33      8,358,797          145,640          140,938         4,702            0
+ 34      8,399,938          147,976          143,114         4,862            0
+ 35      8,440,720          126,368          121,286         5,082            0
+ 36      8,501,805          127,832          122,823         5,009            0
+ 37      8,542,671          129,456          124,443         5,013            0
+ 38      8,604,136          129,424          124,400         5,024            0
+ 39      8,645,355          131,432          126,417         5,015            0
+ 40      8,706,807          131,416          126,407         5,009            0
+ 41      8,747,742          135,496          130,491         5,005            0
+ 42      8,788,784          135,512          130,499         5,013            0
+ 43      8,829,490          135,528          130,513         5,015            0
+ 44      8,870,382          135,552          130,526         5,026            0
+ 45      8,932,675          109,136          105,393         3,743            0
+96.57% (105,393B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->66.62% (72,704B) 0x5C05A89: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+| ->66.62% (72,704B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+|   ->66.62% (72,704B) 0x40050A7: call_init (dl-init.c:33)
+|     ->66.62% (72,704B) 0x40050A7: _dl_init (dl-init.c:117)
+|       ->66.62% (72,704B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+|         
+->15.19% (16,576B) 0x692D9C8: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->15.01% (16,384B) 0x692DE03: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->15.01% (16,384B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->15.01% (16,384B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |     ->15.01% (16,384B) 0x40050A7: call_init (dl-init.c:33)
+| |       ->15.01% (16,384B) 0x40050A7: _dl_init (dl-init.c:117)
+| |         ->15.01% (16,384B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |           
+| ->00.18% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.13% (6,695B) 0x56D22C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| ->04.91% (5,358B) 0x574F32D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->04.91% (5,358B) in 142 places, all below massif's threshold (1.00%)
+| |   
+| ->01.23% (1,337B) in 18 places, all below massif's threshold (1.00%)
+|   
+->03.73% (4,075B) in 55 places, all below massif's threshold (1.00%)
+| 
+->01.92% (2,096B) 0x692DEE0: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->01.86% (2,032B) 0x69456FB: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->01.86% (2,032B) 0x6913171: g_hash_table_new_full (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->01.86% (2,032B) 0x692DDF2: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |     ->01.86% (2,032B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |       ->01.86% (2,032B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |         ->01.86% (2,032B) 0x40050A7: call_init (dl-init.c:33)
+| |           ->01.86% (2,032B) 0x40050A7: _dl_init (dl-init.c:117)
+| |             ->01.86% (2,032B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |               
+| ->00.06% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.91% (2,080B) 0x5DE4BFE: __new_exitfn (cxa_atexit.c:114)
+| ->01.91% (2,080B) 0x5DE4D6F: __internal_atexit (cxa_atexit.c:44)
+|   ->01.91% (2,080B) 0x5DE4D6F: __cxa_atexit (cxa_atexit.c:70)
+|     ->01.91% (2,080B) in 2 places, all below massif's threshold (1.00%)
+|       
+->01.07% (1,167B) 0x5E7A153: __tzfile_read (tzfile.c:275)
+  ->01.07% (1,167B) 0x5E791A3: tzset_internal (tzset.c:405)
+    ->01.07% (1,167B) 0x5E79B02: tzset (tzset.c:551)
+      ->01.07% (1,167B) 0x56BABAE: qTzSet() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+        ->01.07% (1,167B) 0x5794330: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+          ->01.07% (1,167B) 0x57963A6: QDateTime::setMSecsSinceEpoch(long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+            ->01.07% (1,167B) 0x5798643: QDateTime::fromMSecsSinceEpoch(long long, Qt::TimeSpec, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+              ->01.07% (1,167B) 0x5798A3F: QDateTime::currentDateTime() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+                ->01.07% (1,167B) 0x5798A84: QDate::currentDate() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+                  ->01.07% (1,167B) 0x117965: __static_initialization_and_destruction_0(int, int) (mainwindow.cpp:18)
+                    ->01.07% (1,167B) 0x11798C: _GLOBAL__sub_I_mainwindow.cpp (mainwindow.cpp:218)
+                      ->01.07% (1,167B) 0x5DCA63D: call_init (libc-start.c:145)
+                        ->01.07% (1,167B) 0x5DCA63D: __libc_start_main@@GLIBC_2.34 (libc-start.c:368)
+                          ->01.07% (1,167B) 0x114F44: (below main) (in /home/sara/Desktop/Sara/Desktop/odbrana/05-tudu/tudu/tudu)
+                            
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 46      8,974,378          133,856          129,852         4,004            0
+ 47      9,018,986          136,512          132,354         4,158            0
+ 48      9,080,235          140,488          136,075         4,413            0
+ 49      9,141,854          144,560          139,898         4,662            0
+96.78% (139,898B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->50.29% (72,704B) 0x5C05A89: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+| ->50.29% (72,704B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+|   ->50.29% (72,704B) 0x40050A7: call_init (dl-init.c:33)
+|     ->50.29% (72,704B) 0x40050A7: _dl_init (dl-init.c:117)
+|       ->50.29% (72,704B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+|         
+->24.40% (35,273B) 0x56D22C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| ->11.45% (16,548B) 0x571FDF3: QByteArray::QByteArray(int, Qt::Initialization) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->11.35% (16,409B) 0x5709CB6: QRingBuffer::reserve(long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->11.35% (16,409B) 0x57E1DB2: QIODevicePrivate::read(char*, long long, bool) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | ->11.35% (16,409B) 0x57E2952: QIODevice::readAll() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | |   ->11.35% (16,409B) 0x11D57E: Task::save(QString) (task.cpp:161)
+| | | |     ->11.35% (16,409B) 0x115269: main (main.cpp:17)
+| | | |       
+| | | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.10% (139B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->04.51% (6,520B) 0x571FFA2: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->04.51% (6,520B) 0x57E291C: QIODevice::readAll() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->04.51% (6,520B) 0x11D57E: Task::save(QString) (task.cpp:161)
+| | |   ->04.51% (6,520B) 0x115269: main (main.cpp:17)
+| | |     
+| | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->03.71% (5,358B) 0x574F32D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->03.71% (5,358B) in 142 places, all below massif's threshold (1.00%)
+| |   
+| ->03.66% (5,288B) 0x5929705: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->03.66% (5,288B) 0x593E478: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->03.66% (5,288B) 0x593F2CC: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |   ->03.66% (5,288B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     ->02.96% (4,272B) 0x593EF8E: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     | ->02.96% (4,272B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |   ->02.96% (4,272B) 0x594018C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |     ->02.96% (4,272B) 0x5930A23: QJsonDocument::fromJson(QByteArray const&, QJsonParseError*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |       ->02.96% (4,272B) 0x11D59C: Task::save(QString) (task.cpp:161)
+| | |     |         ->02.96% (4,272B) 0x115269: main (main.cpp:17)
+| | |     |           
+| | |     ->00.70% (1,016B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->01.08% (1,559B) in 15 places, all below massif's threshold (1.00%)
+|   
+->11.47% (16,576B) 0x692D9C8: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->11.33% (16,384B) 0x692DE03: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->11.33% (16,384B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->11.33% (16,384B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |     ->11.33% (16,384B) 0x40050A7: call_init (dl-init.c:33)
+| |       ->11.33% (16,384B) 0x40050A7: _dl_init (dl-init.c:117)
+| |         ->11.33% (16,384B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |           
+| ->00.13% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.18% (6,049B) in 55 places, all below massif's threshold (1.00%)
+| 
+->03.54% (5,120B) 0x56D236F: QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| ->03.45% (4,992B) 0x571FEE1: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->03.45% (4,992B) 0x571FF3A: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->03.45% (4,992B) 0x593E3FA: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | ->03.10% (4,480B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | | ->03.10% (4,480B) 0x593EF8E: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |   ->03.10% (4,480B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |     ->03.10% (4,480B) 0x594018C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |       ->03.10% (4,480B) 0x5930A23: QJsonDocument::fromJson(QByteArray const&, QJsonParseError*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |         ->03.10% (4,480B) 0x11D59C: Task::save(QString) (task.cpp:161)
+| | | | |           ->03.10% (4,480B) 0x115269: main (main.cpp:17)
+| | | | |             
+| | | | ->00.35% (512B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | | 
+| | | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.09% (128B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.45% (2,096B) 0x692DEE0: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->01.41% (2,032B) 0x69456FB: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->01.41% (2,032B) 0x6913171: g_hash_table_new_full (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->01.41% (2,032B) 0x692DDF2: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |     ->01.41% (2,032B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |       ->01.41% (2,032B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |         ->01.41% (2,032B) 0x40050A7: call_init (dl-init.c:33)
+| |           ->01.41% (2,032B) 0x40050A7: _dl_init (dl-init.c:117)
+| |             ->01.41% (2,032B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |               
+| ->00.04% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.44% (2,080B) 0x5DE4BFE: __new_exitfn (cxa_atexit.c:114)
+  ->01.44% (2,080B) 0x5DE4D6F: __internal_atexit (cxa_atexit.c:44)
+    ->01.44% (2,080B) 0x5DE4D6F: __cxa_atexit (cxa_atexit.c:70)
+      ->01.44% (2,080B) in 2 places, all below massif's threshold (1.00%)
+        
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 50      9,171,385          146,624          141,851         4,773            0
+ 51      9,211,368          148,304          143,410         4,894            0
+ 52      9,240,689          127,032          121,757         5,275            0
+ 53      9,270,217          127,528          122,505         5,023            0
+ 54      9,299,724          127,848          122,825         5,023            0
+ 55      9,329,039          128,304          123,295         5,009            0
+ 56      9,358,643          129,472          124,443         5,029            0
+ 57      9,388,089          129,384          124,361         5,023            0
+ 58      9,417,384          131,408          126,402         5,006            0
+ 59      9,446,889          131,448          126,427         5,021            0
+96.18% (126,427B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->55.31% (72,704B) 0x5C05A89: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+| ->55.31% (72,704B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+|   ->55.31% (72,704B) 0x40050A7: call_init (dl-init.c:33)
+|     ->55.31% (72,704B) 0x40050A7: _dl_init (dl-init.c:117)
+|       ->55.31% (72,704B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+|         
+->12.61% (16,576B) 0x692D9C8: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->12.46% (16,384B) 0x692DE03: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->12.46% (16,384B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->12.46% (16,384B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |     ->12.46% (16,384B) 0x40050A7: call_init (dl-init.c:33)
+| |       ->12.46% (16,384B) 0x40050A7: _dl_init (dl-init.c:117)
+| |         ->12.46% (16,384B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |           
+| ->00.15% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->11.53% (15,154B) 0x56D22C1: QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| ->06.07% (7,984B) 0x5929705: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->05.11% (6,720B) 0x593E478: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->05.11% (6,720B) 0x593F2CC: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |   ->05.11% (6,720B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     ->04.34% (5,704B) 0x593EF8E: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     | ->04.34% (5,704B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |   ->04.34% (5,704B) 0x594018C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |     ->04.34% (5,704B) 0x5930A23: QJsonDocument::fromJson(QByteArray const&, QJsonParseError*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     |       ->04.34% (5,704B) 0x11D59C: Task::save(QString) (task.cpp:161)
+| | |     |         ->04.34% (5,704B) 0x115269: main (main.cpp:17)
+| | |     |           
+| | |     ->00.77% (1,016B) in 1+ places, all below ms_print's threshold (01.00%)
+| | |     
+| | ->00.96% (1,264B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->04.12% (5,418B) 0x574F32D: QString::fromLatin1_helper(char const*, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->04.12% (5,418B) in 142 places, all below massif's threshold (1.00%)
+| |   
+| ->01.33% (1,752B) in 17 places, all below massif's threshold (1.00%)
+|   
+->08.76% (11,520B) 0x56D236F: QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| ->08.57% (11,264B) 0x571FEE1: QByteArray::reallocData(unsigned int, QFlags<QArrayData::AllocationOption>) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | ->05.45% (7,168B) 0x571FF3A: QByteArray::resize(int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->05.26% (6,912B) 0x593E3FA: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | ->04.48% (5,888B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | | ->04.48% (5,888B) 0x593EF8E: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |   ->04.48% (5,888B) 0x593F4AF: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |     ->04.48% (5,888B) 0x594018C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |       ->04.48% (5,888B) 0x5930A23: QJsonDocument::fromJson(QByteArray const&, QJsonParseError*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | | |         ->04.48% (5,888B) 0x11D59C: Task::save(QString) (task.cpp:161)
+| | | | |           ->04.48% (5,888B) 0x115269: main (main.cpp:17)
+| | | | |             
+| | | | ->00.78% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | | 
+| | | ->00.19% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->03.12% (4,096B) 0x5721272: QByteArray::append(char const*) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | | ->03.12% (4,096B) 0x593BC5C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |   ->03.12% (4,096B) 0x593B866: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |     ->03.12% (4,096B) 0x593BCC9: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |       ->03.12% (4,096B) 0x593C31C: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |         ->03.12% (4,096B) 0x593094D: QJsonDocument::toJson(QJsonDocument::JsonFormat) const (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |           ->03.12% (4,096B) 0x59309A2: QJsonDocument::toJson() const (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+| | |             ->03.12% (4,096B) 0x11DBA3: Task::save(QString) (task.cpp:183)
+| | |               ->03.12% (4,096B) 0x115269: main (main.cpp:17)
+| | |                 
+| | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.19% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.79% (6,297B) in 55 places, all below massif's threshold (1.00%)
+| 
+->01.59% (2,096B) 0x692DEE0: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->01.55% (2,032B) 0x69456FB: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->01.55% (2,032B) 0x6913171: g_hash_table_new_full (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->01.55% (2,032B) 0x692DDF2: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |     ->01.55% (2,032B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |       ->01.55% (2,032B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |         ->01.55% (2,032B) 0x40050A7: call_init (dl-init.c:33)
+| |           ->01.55% (2,032B) 0x40050A7: _dl_init (dl-init.c:117)
+| |             ->01.55% (2,032B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |               
+| ->00.05% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.58% (2,080B) 0x5DE4BFE: __new_exitfn (cxa_atexit.c:114)
+  ->01.58% (2,080B) 0x5DE4D6F: __internal_atexit (cxa_atexit.c:44)
+    ->01.58% (2,080B) 0x5DE4D6F: __cxa_atexit (cxa_atexit.c:70)
+      ->01.58% (2,080B) in 2 places, all below massif's threshold (1.00%)
+        
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 60      9,476,423          131,600          126,563         5,037            0
+ 61      9,505,833          131,504          126,469         5,035            0
+ 62      9,535,142          135,528          130,503         5,025            0
+ 63      9,564,447          135,528          130,507         5,021            0
+ 64      9,593,841          135,544          130,523         5,021            0
+ 65      9,623,275          135,616          130,577         5,039            0
+ 66      9,652,679          135,472          130,463         5,009            0
+ 67      9,682,225          135,528          130,497         5,031            0
+ 68      9,711,731          107,576          104,119         3,457            0
+ 69      9,741,025           97,960           96,998           962            0
+99.02% (96,998B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->74.22% (72,704B) 0x5C05A89: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+| ->74.22% (72,704B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+|   ->74.22% (72,704B) 0x40050A7: call_init (dl-init.c:33)
+|     ->74.22% (72,704B) 0x40050A7: _dl_init (dl-init.c:117)
+|       ->74.22% (72,704B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+|         
+->16.92% (16,576B) 0x692D9C8: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->16.73% (16,384B) 0x692DE03: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->16.73% (16,384B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->16.73% (16,384B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |     ->16.73% (16,384B) 0x40050A7: call_init (dl-init.c:33)
+| |       ->16.73% (16,384B) 0x40050A7: _dl_init (dl-init.c:117)
+| |         ->16.73% (16,384B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |           
+| ->00.20% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.14% (2,096B) 0x692DEE0: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| ->02.07% (2,032B) 0x69456FB: g_slice_alloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| | ->02.07% (2,032B) 0x6913171: g_hash_table_new_full (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |   ->02.07% (2,032B) 0x692DDF2: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |     ->02.07% (2,032B) 0x68EDD78: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7400.3)
+| |       ->02.07% (2,032B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+| |         ->02.07% (2,032B) 0x40050A7: call_init (dl-init.c:33)
+| |           ->02.07% (2,032B) 0x40050A7: _dl_init (dl-init.c:117)
+| |             ->02.07% (2,032B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+| |               
+| ->00.07% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.12% (2,080B) 0x5DE4BFE: __new_exitfn (cxa_atexit.c:114)
+| ->02.12% (2,080B) 0x5DE4D6F: __internal_atexit (cxa_atexit.c:44)
+|   ->02.12% (2,080B) 0x5DE4D6F: __cxa_atexit (cxa_atexit.c:70)
+|     ->01.06% (1,040B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+|     | ->01.06% (1,040B) 0x40050A7: call_init (dl-init.c:33)
+|     |   ->01.06% (1,040B) 0x40050A7: _dl_init (dl-init.c:117)
+|     |     ->01.06% (1,040B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+|     |       
+|     ->01.06% (1,040B) 0x5017892: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.6)
+|       ->01.06% (1,040B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+|         ->01.06% (1,040B) 0x40050A7: call_init (dl-init.c:33)
+|           ->01.06% (1,040B) 0x40050A7: _dl_init (dl-init.c:117)
+|             ->01.06% (1,040B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+|               
+->01.38% (1,351B) in 55 places, all below massif's threshold (1.00%)
+| 
+->01.19% (1,167B) 0x5E7A153: __tzfile_read (tzfile.c:275)
+| ->01.19% (1,167B) 0x5E791A3: tzset_internal (tzset.c:405)
+|   ->01.19% (1,167B) 0x5E79B02: tzset (tzset.c:551)
+|     ->01.19% (1,167B) 0x56BABAE: qTzSet() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+|       ->01.19% (1,167B) 0x5794330: ??? (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+|         ->01.19% (1,167B) 0x57963A6: QDateTime::setMSecsSinceEpoch(long long) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+|           ->01.19% (1,167B) 0x5798643: QDateTime::fromMSecsSinceEpoch(long long, Qt::TimeSpec, int) (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+|             ->01.19% (1,167B) 0x5798A3F: QDateTime::currentDateTime() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+|               ->01.19% (1,167B) 0x5798A84: QDate::currentDate() (in /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.6)
+|                 ->01.19% (1,167B) 0x117965: __static_initialization_and_destruction_0(int, int) (mainwindow.cpp:18)
+|                   ->01.19% (1,167B) 0x11798C: _GLOBAL__sub_I_mainwindow.cpp (mainwindow.cpp:218)
+|                     ->01.19% (1,167B) 0x5DCA63D: call_init (libc-start.c:145)
+|                       ->01.19% (1,167B) 0x5DCA63D: __libc_start_main@@GLIBC_2.34 (libc-start.c:368)
+|                         ->01.19% (1,167B) 0x114F44: (below main) (in /home/sara/Desktop/Sara/Desktop/odbrana/05-tudu/tudu/tudu)
+|                           
+->01.05% (1,024B) 0x6AD7A03: ??? (in /usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0)
+  ->01.05% (1,024B) 0x6AC4D63: ??? (in /usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0)
+    ->01.05% (1,024B) 0x4004FBD: call_init.part.0 (dl-init.c:70)
+      ->01.05% (1,024B) 0x40050A7: call_init (dl-init.c:33)
+        ->01.05% (1,024B) 0x40050A7: _dl_init (dl-init.c:117)
+          ->01.05% (1,024B) 0x401D8AF: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+            
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 70      9,771,466           94,112           93,903           209            0

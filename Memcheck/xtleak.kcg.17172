@@ -1,0 +1,710 @@
+# callgrind format
+version: 1
+creator: xtree-1
+pid: 17172
+cmd: ./tudu
+
+positions: line
+event: RB : Reachable Bytes
+event: PB : Possibly lost Bytes
+event: IB : Indirectly lost Bytes
+event: DB : Definitely lost Bytes (direct plus indirect)
+event: DIB : Definitely Indirectly lost Bytes (subset of DB)
+event: RBk : reachable Blocks
+event: PBk : Possibly lost Blocks
+event: IBk : Indirectly lost Blocks
+event: DBk : Definitely lost Blocks
+event: iRB : increase Reachable Bytes
+event: iPB : increase Possibly lost Bytes
+event: iIB : increase Indirectly lost Bytes
+event: iDB : increase Definitely lost Bytes
+event: iDIB : increase Definitely Indirectly lost Bytes
+event: iRBk : increase reachable Blocks
+event: iPBk : increase Possibly lost Blocks
+event: iIBk : increase Indirectly lost Blocks
+event: iDBk : increase Definitely lost Blocks
+event: dRB : decrease Reachable Bytes
+event: dPB : decrease Possibly lost Bytes
+event: dIB : decrease Indirectly lost Bytes
+event: dDB : decrease Definitely lost Bytes
+event: dDIB : decrease Definitely Indirectly lost Bytes
+event: dRBk : decrease reachable Blocks
+event: dPBk : decrease Possibly lost Blocks
+event: dIBk : decrease Indirectly lost Blocks
+event: dDBk : decrease Definitely lost Blocks
+events: RB  PB  IB  DB  DIB  RBk  PBk  IBk  DBk  iRB  iPB  iIB  iDB  iDIB  iRBk  iPBk  iIBk  iDBk  dRB  dPB  dIB  dDB  dDIB  dRBk  dPBk  dIBk  dDBk 
+fl=(1) UnknownFile???
+fn=(1) UnknownFn???
+0
+cfi=(2) ./elf/./elf/dl-init.c
+cfn=(2) _dl_init
+calls=0 33
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3) call_init.part.0
+calls=0 70
+33 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4) g_hash_table_new_full
+calls=0 0
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(5) g_slice_alloc
+calls=0 0
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(5)
+0
+cfi=(1)
+cfn=(6) g_private_get
+calls=0 0
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(6)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(7) malloc
+calls=0 0
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 4 0 0 0 0 1 0 0 0 4 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4)
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(8) g_malloc0
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(8)
+0
+cfi=(1)
+cfn=(9) calloc
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(9)
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4)
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(8)
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(8)
+0
+cfi=(1)
+cfn=(9)
+calls=0 0
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(9)
+0 32 0 0 0 0 1 0 0 0 32 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(10) QTextStream::QTextStream(QString*, QFlags<QIODevice::OpenModeFlag>)
+0
+cfi=(1)
+cfn=(11) QTextCodec::codecForLocale()
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(11)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(12) ucnv_getStandardName_71
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(12)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(13) UDataMemory_createNewInstance_71
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(13)
+0
+cfi=(1)
+cfn=(7)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(14) QMessageLogger::debug() const
+0
+cfi=(1)
+cfn=(10)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(10)
+0
+cfi=(1)
+cfn=(11)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(11)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(12)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(12)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(13)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(13)
+0
+cfi=(1)
+cfn=(7)
+calls=0 0
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 56 0 0 0 0 1 0 0 0 56 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(15) g_realloc
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(15)
+0
+cfi=(1)
+cfn=(7)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(15)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(15)
+0
+cfi=(1)
+cfn=(7)
+calls=0 0
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 64 0 0 0 0 1 0 0 0 64 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(5)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(5)
+0
+cfi=(1)
+cfn=(16) g_malloc
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(16)
+0
+cfi=(1)
+cfn=(7)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(5)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(5)
+0
+cfi=(1)
+cfn=(16)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(16)
+0
+cfi=(1)
+cfn=(7)
+calls=0 0
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 96 0 0 0 0 1 0 0 0 96 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(4)
+calls=0 0
+0 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(4)
+0
+cfi=(1)
+cfn=(5)
+calls=0 0
+0 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(5)
+0
+cfi=(1)
+cfn=(8)
+calls=0 0
+0 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(8)
+0
+cfi=(1)
+cfn=(9)
+calls=0 0
+0 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(9)
+0 2032 0 0 0 0 1 0 0 0 2032 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+fl=(1)
+fn=(1)
+0
+cfi=(2)
+cfn=(2)
+calls=0 33
+0 16384 0 0 0 0 1 0 0 0 16384 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(2)
+33
+cfi=(2)
+cfn=(3)
+calls=0 70
+33 16384 0 0 0 0 1 0 0 0 16384 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(2)
+fn=(3)
+70
+cfi=(1)
+cfn=(1)
+calls=0 0
+70 16384 0 0 0 0 1 0 0 0 16384 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(1)
+calls=0 0
+0 16384 0 0 0 0 1 0 0 0 16384 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(1)
+0
+cfi=(1)
+cfn=(16)
+calls=0 0
+0 16384 0 0 0 0 1 0 0 0 16384 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(16)
+0
+cfi=(1)
+cfn=(7)
+calls=0 0
+0 16384 0 0 0 0 1 0 0 0 16384 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+fl=(1)
+fn=(7)
+0 16384 0 0 0 0 1 0 0 0 16384 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+
+totals: 18916 0 0 0 0 11 0 0 0 18916 0 0 0 0 11 0 0 0 0 0 0 0 0 0 0 0 0

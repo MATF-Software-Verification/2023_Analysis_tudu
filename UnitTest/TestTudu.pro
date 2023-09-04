@@ -30,3 +30,8 @@ HEADERS += \
     ../05-tudu/tudu/headers/addtaskformtudu.h \
     ../05-tudu/tudu/headers/weeklyview.h
 
+DISTFILES += \
+    ../Verification/05-tudu/tudu/resources/png/high_priority.png \
+    ../Verification/05-tudu/tudu/resources/png/low_priority.png \
+    ../Verification/05-tudu/tudu/resources/png/mid_priority.png
+

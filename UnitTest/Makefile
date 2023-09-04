@@ -75,7 +75,10 @@ OBJECTS       = tst_test.o \
 		moc_tudulist.o \
 		moc_addtaskformweekly.o \
 		moc_addtaskformtudu.o
-DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
+DIST          = ../Verification/05-tudu/tudu/resources/png/high_priority.png \
+		../Verification/05-tudu/tudu/resources/png/low_priority.png \
+		../Verification/05-tudu/tudu/resources/png/mid_priority.png \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/sanitize.conf \
